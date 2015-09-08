@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>jQueryUI Demo</title>
+  <!-- <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootswatch.min.css">
+  <script src="js/jquery1.9.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <style>
+  body{
+    margin:0;
+  }
+/*      #draggable {
+        width: 100px;
+        height: 100px;
+        background: #ccc;
+      }*/
+  </style>
+  <script>
+    $(function(){
+      $( "#btn" ).draggable({
+        // addclass: false,
+        // containment: "parent",
+        // appendTo: "div",
+        // revert: "invalid"
+        // axis: "y",
+        // cursor: "crosshair",
+        scroll: true
+      });
+    });
+    
+  </script>
+</head>
+<body>
+    <!-- <div class="container"> -->
+      <p id="btn" class="btn btn-primary">Drag me, I can  fly~~ hhhhhh~~</p>
+      <div class="container" style="width: 400px; height:400px; margin: 0 auto; background: #ccc;">
+        
+      </div>
+    <!-- </div> -->
+    
+</body>
+</html>
